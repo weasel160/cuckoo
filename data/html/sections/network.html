@@ -3,6 +3,9 @@
         <h4>Network Analysis</h4>
     </div>
     {% if results.network %}
+            <div>
+                <h4><a href="/pcap/{{results.info.id}}">Get PCAP</a></h4>
+            </div>
         {% if results.network.hosts %}
             <div>
                 <h4><a href="javascript:showHide('hosts');">Hosts Involved</a></h4>
